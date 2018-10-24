@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boltbus</title>
+<!-- javascript library-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--your google fonts here-->
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<!--flexbox framework-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<!--your styles-->
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-sm bg-light navbar-light" id="pre-nav"> <a class="navbar-brand" href="#"> <img src="img/Logo.png" alt="logo" id="logo" height="50"> </a>
+  <ul class="navbar-nav flex-row-reverse w-100">
+    <li class="nav-item"> <a class="nav-link" href="#">Login</a> </li>
+    <li class="nav-item"> <a class="nav-link">|</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="tel:1-206-972-4811">Call</a> </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"> <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a> </li>
+      <li class="nav-item"> <a class="nav-link">|</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#">Book A trip</a> </li>
+      <li class="nav-item"> <a class="nav-link">|</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#">Information</a> </li>
+      <li class="nav-item"> <a class="nav-link">|</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#">Experience</a> </li>
+      <li class="nav-item"> <a class="nav-link">|</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#">Rewards</a> </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" placeholder="Need anything?">
+      <button type="button" class="btn btn-dark">Search</button>
+    </form>
+  </div>
+</nav>
+<div class="slide-bg">
+  <div class="slideshow-container">
+    <div class="mySlides custom-fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="img/PIC1.jpg" style="width:100%"> </div>
+    <div class="mySlides custom-fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="img/PIC2.jpg" style="width:100%"> </div>
+    <div class="mySlides custom-fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/PIC3.jpg" style="width:100%"> </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item col-10 text-center"> <a class="nav-link" href="#">Manage Booking</a> </li>
+      <li class="nav-item"> <a class="nav-link">|</a> </li>
+      <li class="nav-item col-8 text-center"> <a class="nav-link" href="#">Find Your Stop</a> </li>
+      <li class="nav-item"> <a class="nav-link">|</a> </li>
+      <li class="nav-item col-8 text-center"> <a class="nav-link" href="#">Track Your Bus</a> </li>
+    </ul>
+  </div>
+</nav>
+<div class="container mr-5 ml-5">
+  <div class="form-group row mt-5 pt-5">
+    <label class="col-1 col-form-label text-center">From</label>
+    <div class="col-3">
+      <select class="form-control">
+        <option>Portland</option>
+        <option>Seattle</option>
+        <option>San Francisco</option>
+        <option>Vancouver</option>
+      </select>
+    </div>
+    <label class="col-1 col-form-label text-center">To</label>
+    <div class="col-3">
+      <select class="form-control">
+        <option>Portland</option>
+        <option>Seattle</option>
+        <option>San Francisco</option>
+        <option>Vancouver</option>
+      </select>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-1">
+      <button type="button" class="btn btn-light">Round</button>
+    </div>
+    <div class="col-1">
+      <button type="button" class="btn btn-light">1 Way</button>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="form-group row mt-5">
+    <div class="col-4">
+      <div class="row">
+        <label class="col-3 col-form-label text-center">Date</label>
+        <div class="col-9">
+          <input type="date" class="form-control"/>
+        </div>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="form-check col-3 text-center">
+          <input class="form-check-input" type="radio" name="exampleRadios" value="option1" checked>
+          <label class="form-check-label">Morning</label>
+        </div>
+        <div class="form-check col-3 text-center">
+          <input class="form-check-input" type="radio" name="exampleRadios" value="option1" checked>
+          <label class="form-check-label">Afternoon</label>
+        </div>
+        <div class="form-check col-3 text-center">
+          <input class="form-check-input" type="radio" name="exampleRadios" value="option1" checked>
+          <label class="form-check-label">Evening</label>
+        </div>
+        <div class="col-1"></div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row mt-5 pb-5">
+    <label class="col-2 col-form-label text-right">Accessibility</label>
+    <div class="col-2">
+      <select class="form-control">
+        <option>Wheelchair</option>
+        <option>Vision Impaired</option>
+        <option>Hearing Impaired</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-1">
+      <input type="number" class="form-control"/>
+    </div>
+    <label class="col-2 col-form-label">of Passengers</label>
+    <div class="col-1"></div>
+    <div class="col-2">
+      <button class="btn btn-block btn-warning">Search</button>
+    </div>
+    <div class="col-1"></div>
+  </div>
+</div>
+<div class="container-fluid pl-5 pr-5 mt-5">
+  <div class="ml-5 mr-5 pt-3 pb-3 pl-3 pr-3">
+    <div class="row">
+      <div class="col">
+        <center>
+          <h3>On Our Buses</h3>
+          <hr>
+        </center>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card"> <img class="card-img-top" src="img/wifi.svg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text text-center">Free Wifi</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card"> <img class="card-img-top" src="img/power.svg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text text-center">Power Outlets</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card"> <img class="card-img-top" src="img/restroom.svg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text text-center">Restroom</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card"> <img class="card-img-top" src="img/happy.svg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text text-center">Happiness</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid pl-5 pr-5 mt-5">
+  <div class="ml-5 mr-5 pt-3 pb-3 pl-3 pr-3">
+    <div class="row">
+      <div class="col">
+        <center>
+          <h3>Testimonials</h3>
+          <hr>
+        </center>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card"> <img class="card-img-top" src="img/1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text text-center"> BoltBus is a pretty solid method of transportation from NYC to Boston! I really liked the pickup spot, which is way better in my opinion than at Penn Station or at any other transit stop. Sometimes too overwhelming, especially when you are rushing to find your bus after being stuck in traffic. But I will be using Bolt Bus again! ---- Angel M. (Quincy, MA) </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card"> <img class="card-img-top" src="img/2.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text text-center"> The bus driver was honestly the best. He was super friendly, answered everyone's questions and even took time to help an elderly lady who was seriously confused about where to get off at. The bus was clean and has plenty of leg room. The wifi works great, the seats are comfy, and there are outlets for your chargers. ---- Haylie L. (Washington, DC)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card"> <img class="card-img-top" src="img/3.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text text-center"> I am not a fan of flying, so I decided to start taking bus trips, and was VERY satisfied. The bus was on punctual, quiet, had plenty of leg room, a clean bathroom and a huge cargo area that allows folding bicycles. What more can you ask for?  I look forward to using the service again soon. Keep up the good work! ---- William S. (New York, NY) </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="input-group mb-3 mt-3 ml-5">
+    <input type="text" class="form-control" placeholder="Sign up for newsletter">
+    <div class="input-group-append col-5">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</button>
+    </div>
+    <div class="col-2 text-center text-white-50">Follow us</div>
+    <div class="col-1 text-center text-white-50">Instagram</div>
+    <div class="col-1 text-center text-white-50">Youtube</div>
+    <div class="col-1 text-center text-white-50">Twitter</div>
+  </div>
+</div>
+<div class="navbar navbar-expand-sm bg-light navbar-light" id="footer">
+  <ul class="navbar-nav flex-row-reverse w-100">
+    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Apps </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Android</a> <a class="dropdown-item" href="#">iPhone</a> <a class="dropdown-item" href="#">iPad</a> </div>
+    </li>
+    <li class="nav-item"> <a class="nav-link">|</a> </li>
+    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> International </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">繁體中文</a> <a class="dropdown-item" href="#">简体中文</a> <a class="dropdown-item" href="#">日本版</a> <a class="dropdown-item" href="#">UK</a> </div>
+    </li>
+    <li class="nav-item"> <a class="nav-link">|</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="#">FAQ</a> </li>
+    <li class="nav-item"> <a class="nav-link">|</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="#">Terms</a> </li>
+    <li class="nav-item"> <a class="nav-link">|</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
+  </ul>
+</div>
+</body>
+<script src="js/script.js"></script>
+</html>
